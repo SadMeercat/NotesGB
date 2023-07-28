@@ -1,4 +1,10 @@
-from crud_notes import notes_worker
+
+import console
 
 if __name__ == '__main__':
-    pass
+    console.printManual()
+    while True:
+        command = input("Type command: ")
+        if command == "exit":
+            break
+        console.userTalk(command)
