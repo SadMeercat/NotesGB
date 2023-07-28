@@ -80,12 +80,3 @@ class notes_worker():
                 writer.writerow({"ID": counter, "Note": i["Note"]})
                 counter += 1
             self.num_note = counter + 1
-
-if __name__ == "__main__":
-    test = notes_worker()
-    #test.addNote("test2")
-    test.readAll()
-    #test.updateNote(3, "testtest")
-    test.deleteNote(4)
-    print("---------------------------------")
-    test.readAll()
